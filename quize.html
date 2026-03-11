@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>JEE Quiz</title>
+
+<script>
+function checkQuiz(){
+let score = 0;
+
+if(document.getElementById("q1a").checked) score++;
+if(document.getElementById("q2b").checked) score++;
+if(document.getElementById("q3a").checked) score++;
+
+document.getElementById("result").innerHTML =
+"Your Score: " + score + " / 3";
+}
+</script>
+
+</head>
+
+<body style="font-family:Arial;text-align:center">
+
+<h1>JEE Practice Quiz</h1>
+
+<h3>1. SI unit of Force?</h3>
+<input type="radio" name="q1" id="q1a"> Newton<br>
+<input type="radio" name="q1"> Joule<br>
+<input type="radio" name="q1"> Watt<br>
+
+<h3>2. Value of g on Earth?</h3>
+<input type="radio" name="q2"> 5 m/s²<br>
+<input type="radio" name="q2" id="q2b"> 9.8 m/s²<br>
+<input type="radio" name="q2"> 20 m/s²<br>
+
+<h3>3. Symbol of Sodium?</h3>
+<input type="radio" name="q3" id="q3a"> Na<br>
+<input type="radio" name="q3"> So<br>
+<input type="radio" name="q3"> Sn<br>
+
+<br><br>
+
+<button onclick="checkQuiz()">Submit Quiz</button>
+
+<h2 id="result"></h2>
+
+<br>
+<a href="index.html">Back to Home</a>
+
+</body>
+  </html>
